@@ -1,6 +1,6 @@
 {
   "name": "react-horizontal-scroller-component",
-  "version": "0.1.1",
+  "version": "0.1.5",
   "description": "A simple React component that manages horizontal scrolling of it's children",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",

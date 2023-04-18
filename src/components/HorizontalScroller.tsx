@@ -66,7 +66,9 @@ const HorizontalScroller: React.FC<Props> = ({ children }) => {
       style={{ height: dynamicHeight ?? undefined }}
     >
       <div className='sticky top-nav h-full-without-nav w-full overflow-x-hidden bg-transparent' ref={containerRef}>
-        <div style={{ transform: ` translate3d(${translateX}px, 0, 0)` }}>{children}</div>
+        <div style={{ transform: ` translate3d(${translateX}px, 0, 0)` }} ref={objectRef}>
+          {children}
+        </div>
       </div>
     </div>
   )
