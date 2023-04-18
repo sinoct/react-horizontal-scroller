@@ -1,7 +1,6 @@
 import React, { Dispatch, MutableRefObject, SetStateAction, useEffect, useRef, useState } from 'react'
 
 type Props = {
-  title: string
   children: JSX.Element
 }
 
@@ -40,6 +39,7 @@ const HorizontalScroller: React.FC<Props> = ({ children }) => {
       //   const objectWidth = ref.current.scrollWidth;
       //   const vw = window.innerWidth;
       //   const clientRect = ref.current.getBoundingClientRect();
+      console.log(offsetTop)
       setTranslateX(offsetTop)
     }
   }
