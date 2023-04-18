@@ -5,6 +5,7 @@ type Props = {
 }
 
 const HorizontalScroller: React.FC<Props> = ({ children }) => {
+  console.log('horizontal')
   const [dynamicHeight, setDynamicHeight] = useState<number | null>(null)
   const [translateX, setTranslateX] = useState<number>(0)
 
@@ -14,7 +15,7 @@ const HorizontalScroller: React.FC<Props> = ({ children }) => {
   const calcDynamicHeight = (objectWidth: number) => {
     const vw = window.innerWidth
     const vh = window.innerHeight
-    return objectWidth - vw + vh - 100
+    return objectWidth - vw + vh
   }
 
   const handleDynamicHeight = (
